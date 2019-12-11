@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>06 Servindo tags para Formulários parte 2</title>
+    <title>07 Servindo tags para Formulários [Propriedades]</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,13 +16,16 @@
                     Meu Formulário
                 </legend>
                 <p>
-                    Insira seu nome: <input type="text">
+                    Insira seu nome: <input type="text" required placeholder="Digite seu nome completo" disabled readonly>
                 </p>
                 <p>
-                    Insira seu e-mail: <input type="email">
+                    Insira seu CPF: <input type="text" required placeholder="Digite seu CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
                 </p>
                 <p>
-                    Insira sua senha: <input type="password">
+                    Insira seu e-mail: <input type="email" required>
+                </p>
+                <p>
+                    Insira sua senha: <input type="password" placeholder="Digite uma senha segura">
                 </p>
                 <p>
                     Insira o sexo:<br>
@@ -31,7 +34,7 @@
                 </p>
                 <p>
                     Informe a sua tecnologia preferida:<br>
-                    <input type="checkbox"> HTML 5 <br>
+                    <input type="checkbox" checked> HTML 5 <br>
                     <input type="checkbox"> CSS3 <br>
                     <input type="checkbox"> PHP <br>
                     <input type="checkbox"> jQuery <br>
